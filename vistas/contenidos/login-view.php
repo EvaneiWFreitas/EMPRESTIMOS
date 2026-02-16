@@ -14,7 +14,7 @@
                 <input type="text" class="form-control" id="UserName" name="usuario" pattern="[a-zA-Z0-9]{1,35}" maxlength="35" required="" >
             </div>
             <div class="form-group">
-                <label for="UserPassword" class="bmd-label-floating"><i class="fas fa-key"></i> &nbsp; Contraseña</label>
+                <label for="UserPassword" class="bmd-label-floating"><i class="fas fa-key"></i> &nbsp; Senha</label>
                 <input type="password" class="form-control" id="UserPassword" name="clave" pattern="[a-zA-Z0-9$@.-]{7,100}" maxlength="100" required="" >
             </div>
             <button type="submit" class="btn-login text-center">LOG IN</button>
