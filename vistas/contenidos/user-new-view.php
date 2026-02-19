@@ -1,7 +1,7 @@
 <!-- Page header -->
 <div class="full-box page-header">
     <h3 class="text-left">
-        <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO USUARIO
+        <i class="fas fa-plus fa-fw"></i> &nbsp; NOVO USUARIO
     </h3>
     <p class="text-justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum rerum animi natus beatae ex. Culpa blanditiis tempore amet alias placeat, obcaecati quaerat ullam, sunt est, odio aut veniam ratione.
@@ -11,7 +11,7 @@
 <div class="container-fluid">
     <ul class="full-box list-unstyled page-nav-tabs">
         <li>
-            <a class="active" href="<?php echo SERVERURL; ?>user-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO USUARIO</a>
+            <a class="active" href="<?php echo SERVERURL; ?>user-new/"><i class="fas fa-plus fa-fw"></i> &nbsp; NOVO USUARIO</a>
         </li>
         <li>
             <a href="<?php echo SERVERURL; ?>user-list/"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE USUARIOS</a>
@@ -24,39 +24,39 @@
 
 <!-- Content -->
 <div class="container-fluid">
-    <form action="" class="form-neon" autocomplete="off">
+    <form class="form-neon FormularioAjax" action="" method="POST" data-form="save" autocomplete="off">
         <fieldset>
-            <legend><i class="far fa-address-card"></i> &nbsp; Información personal</legend>
+            <legend><i class="far fa-address-card"></i> &nbsp; Informação pessoal</legend>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-4">
                         <div class="form-group">
-                            <label for="usuario_dni" class="bmd-label-floating">DNI</label>
+                            <label for="usuario_dni" class="bmd-label-floating">DNI/CPF</label>
                             <input type="text" pattern="[0-9-]{1,20}" class="form-control" name="usuario_dni_reg" id="usuario_dni" maxlength="20">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-4">
                         <div class="form-group">
-                            <label for="usuario_nombre" class="bmd-label-floating">Nombres</label>
+                            <label for="usuario_nombre" class="bmd-label-floating">Nomes</label>
                             <input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,35}" class="form-control" name="usuario_nombre_reg" id="usuario_nombre" maxlength="35">
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <div class="form-group">
-                            <label for="usuario_apellido" class="bmd-label-floating">Apellidos</label>
+                            <label for="usuario_apellido" class="bmd-label-floating">Apelidos</label>
                             <input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,35}" class="form-control" name="usuario_apellido_reg" id="usuario_apellido" maxlength="35">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="usuario_telefono" class="bmd-label-floating">Teléfono</label>
+                            <label for="usuario_telefono" class="bmd-label-floating">Telefone</label>
                             <input type="text" pattern="[0-9()+]{8,20}" class="form-control" name="usuario_telefono_reg" id="usuario_telefono" maxlength="20">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="usuario_direccion" class="bmd-label-floating">Dirección</label>
+                            <label for="usuario_direccion" class="bmd-label-floating">Endereço</label>
                             <input type="text" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ().,#\- ]{1,190}" class="form-control" name="usuario_direccion_reg" id="usuario_direccion" maxlength="190">
                         </div>
                     </div>
@@ -65,12 +65,12 @@
         </fieldset>
         <br><br><br>
         <fieldset>
-            <legend><i class="fas fa-user-lock"></i> &nbsp; Información de la cuenta</legend>
+            <legend><i class="fas fa-user-lock"></i> &nbsp; Informação da conta</legend>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="form-group">
-                            <label for="usuario_usuario" class="bmd-label-floating">Nombre de usuario</label>
+                            <label for="usuario_usuario" class="bmd-label-floating">Nome do usuario</label>
                             <input type="text" pattern="[a-zA-Z0-9]{1,35}" class="form-control" name="usuario_usuario_reg" id="usuario_usuario" maxlength="35">
                         </div>
                     </div>
@@ -101,14 +101,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <p><span class="badge badge-info">Control total</span> Permisos para registrar, actualizar y eliminar</p>
-                        <p><span class="badge badge-success">Edición</span> Permisos para registrar y actualizar</p>
-                        <p><span class="badge badge-dark">Registrar</span> Solo permisos para registrar</p>
+                        <p><span class="badge badge-info">Controle total</span> Permissão para registrar, atualizar e eliminar</p>
+                        <p><span class="badge badge-success">Edição</span> Permisão para registrar e atualizar</p>
+                        <p><span class="badge badge-dark">Registrar</span> Só permissão para registrar</p>
                         <div class="form-group">
                             <select class="form-control" name="usuario_privilegio_reg">
-                                <option value="" selected="" disabled="">Seleccione una opción</option>
-                                <option value="1">Control total</option>
-                                <option value="2">Edición</option>
+                                <option value="" selected="" disabled="">Seleccione una opção</option>
+                                <option value="1">Controle total</option>
+                                <option value="2">Edição</option>
                                 <option value="3">Registrar</option>
                             </select>
                         </div>
@@ -119,7 +119,7 @@
         <p class="text-center" style="margin-top: 40px;">
             <button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
             &nbsp; &nbsp;
-            <button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
+            <button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; SALVAR</button>
         </p>
     </form>
 </div>
