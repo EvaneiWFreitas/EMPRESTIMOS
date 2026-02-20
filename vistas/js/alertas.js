@@ -34,7 +34,7 @@ function enviar_formulario_ajax(e){
     }
 
     Swal.fire({
-        title: 'Você tem certeza que deseja salvar estes dados?',
+        title: 'Tem certeza que deseja salvar estes dados?',
         text:  texto_alerta ,
         type:  'question',
         showCancelButton: true,
